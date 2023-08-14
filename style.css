@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato:wght@900&family=Libre+Baskerville&family=Noto+Sans+Sundanese:wght@100&family=Noto+Sans:ital,wght@0,100;1,100&family=Noto+Serif+Khitan+Small+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=REM:wght@900&display=swap');
+*, ::before,::after{
+font-family: 'Noto Sans Sundanese', sans-serif;
+}
+
+html{
+
+}
+
+body{
+    background-color: gray;
+}
+/* Main */
+.main{
+    background-color: #ffffff;
+}
+.flex{
+    display: flex;
+}
+/* Banner */
+.banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner1{
+    background: url(https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/banner/banner1.png?raw=true) center;
+    
+}
+.banner2{
+    background: url( https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/banner/banner2.png?raw=true) center;
+    
+}
+.banner3{
+    background: url(https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/banner/banner3.png?raw=true) center;
+
+}
+
+.banner .content{
+    width: 30%;
+    padding: 50px;
+    text-align: end;
+}
+.banner .content h1{
+    font-size: 3rem;
+    margin-bottom: 4px;
+    font-family: 'REM', sans-serif;
+}
+.banner .content p{
+    font-family: 'Noto Sans', sans-serif;
+}
+.banner button{
+        background-color: orangered;
+}
+/* My failures */
+.mistake{
+    margin: 100px auto;
+    justify-content:center;
+    align-items: center;
+}
+.mistake .left {
+    height: 85vh;
+    margin-right: 20px;
+}
+.mistake .left img{
+    height: 100%;
+    
+}
+.mistake .right{
+    margin-left: 20px;
+    width: 30%;
+}
+
+.mistake .right h1{
+    width: 300px;
+    font-size: 2.5rem;
+}
+.mistake .right p, ul li{
+    letter-spacing: 2px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+    color: green;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 4px;
+  }
+
+/* My plans */
+.plans{
+    flex-direction: column;
+    margin: 100px auto;
+}
+.plans h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contents{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* Watch */
+section.watch{
+    margin: 120px auto;
+    justify-content: center;    
+    position: relative;
+}
+section.watch1::after{
+    content: " ";
+    background: url(https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/gradient1.png?raw=true) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+section.watch2::after{
+    content: " ";
+    background: url(https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/gradient2.png?raw=true) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+section.watch3::after{
+    content: " ";
+    background: url(https://github.com/ProgrammingHero1/new-year-new-me/blob/main/images/gradient3.png?raw=true) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+footer .left, footer .right{
+    width: 30%;
+    margin: auto;
+}
+footer .left{
+    flex-direction: column;    
+}
+footer .left h1{
+    font-size: 2.5rem;
+}
+
+
+footer .left p:nth-of-type(3){
+    margin-top: -3px;
+}
+footer .left .contect_links{
+    margin-top: 4px;
+}
+footer .left .contect_links img{
+    margin: 4px;
+}
+
+footer .right{
+    flex-direction: column;
+}
+footer .right h1{
+    font-size: 1.7rem;
+}
+footer .right input{
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    width: 50%;
+    min-width: 250px;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer .right button{
+    background-color: rgb(59, 59, 236);
+}
+button,input:hover{
+    cursor: pointer;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 30%;
+    min-width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Media quiry */
+
+/*  */
+@media screen and (max-width: 500px) {
+    
+    footer, .contents{
+        flex-direction: column;
+    }
+    .watch, .mistake{
+        display: none;
+    }
+    footer .left, footer .right{
+        width: 98%;
+        text-align: center;
+        align-items: center;
+    }
+    
+}
